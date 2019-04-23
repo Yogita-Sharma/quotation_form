@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  	*{
+  		font-family: 'Montserrat',sans-serif;
+  	}
+  	.modal-content{
+  		background-color: rgb(202,128,255,0.6);
+  		border:none;
+  		border-radius: 2%;
+  	}
+  	.modal-title{
+  		font-size:35px;
+  		font-weight:bolder;
+  		text-align: center;
+  		color:#fff;
+  		padding-top:40px;
+  	}
+  	[type=text],[type=email],[type=number],[type=date]{
+  		width:500px;
+  		margin:auto 20px 20px 30px;
+  		height:60px;
+  		border:none;
+  		border-radius: 10px;
+  		padding:20px;
+  		color:grey;
+  	}
+  	textarea{
+  		width:500px;
+  		margin:auto 20px 20px 30px;
+  		height:100px;
+  		border:none;
+  		border-radius: 10px;
+  		padding:20px;
+  		color:grey;
+  	}
+  	.f_btn{
+  		width:260px;
+  		height:70px;
+  		color:#fff;
+  		border:none;
+  		font-weight:bolder;
+  		background-color:hotpink;
+  		padding:10px;
+  		margin:10px 13px -10px 17px;
+  		font-size:25px;
+  		border-radius:5px;
+  	}
+  	.f_btn:hover{
+  		color:hotpink;
+  		background-color: #fff;
+  	}
+  	 .fa-close {
+  font-size: 24px;
+  color:white;
+  border:none;
+  padding: 20px;
+  -webkit-transition: -webkit-transform 0.25s; /* Safari */
+  transition:  transform 0.25s;
+  transition-timing-function: ease-in;
+
+}
+.fa-close:hover {
+  
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
+  cursor:pointer;
+  background-color:none;
+  opacity:1;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>VENDOR QUOTATION</h2>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
+      
+          <p class="modal-title">YOUR BASIC INFORMATION</p>
+        <div class="modal-body">
+          <input type="text" class="form-control form-control-lg" placeholder="Your Name">
+          <input type="email" placeholder="E-Mail">
+          <input type="number" placeholder="Phone Number">
+          <input type="text" placeholder="City">
+      	  <input type="number" placeholder="Estimated number of guests">
+      	  
+      	  <textarea placeholder="Any additional information you'd like to give."></textarea>
+      	 
+        </div>
+        
+        	 <button type="button" class="f_btn btn btn-default" data-dismiss="modal">SUBMIT</button>
+          <button type="button" class="f_btn btn btn-default" data-dismiss="modal">CLOSE</button>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
